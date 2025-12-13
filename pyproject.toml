@@ -1,0 +1,15 @@
+[project]
+name = "dialog-context-bot"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.23.0",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.9",
+]
