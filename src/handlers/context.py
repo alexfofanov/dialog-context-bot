@@ -29,4 +29,4 @@ async def context_handler(
 
     response = '\n'.join(formatted)
 
-    await message.answer(f'📜 *Текущий контекст:*\n{response}', parse_mode='Markdown')
+    await message.answer(f'*Текущий контекст:*\n{response}', parse_mode='Markdown')

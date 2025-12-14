@@ -1,0 +1,16 @@
+services:
+  dialog-context-bot:
+    image: alexfofanov/dialog-context-bot:latest
+    container_name: dialog-context-bot
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "bash", "-c", "ps -p 1 > /dev/null"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

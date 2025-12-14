@@ -4,10 +4,7 @@ target-version = "py312"
 
 src = ["src"]
 
-exclude = [
-    "alembic/**",
-    "src/services/preprint_alert/**",
-]
+exclude = []
 
 [format]
 quote-style = "single"
@@ -31,9 +28,7 @@ extend-select = [
     "N",
 ]
 exclude = [
-    "alembic/**",
     "tests/**",
-    "src/services/preprint_alert/**"
 ]
 ignore = [
     "ANN201",

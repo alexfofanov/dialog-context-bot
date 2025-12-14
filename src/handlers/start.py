@@ -15,4 +15,4 @@ async def start_command_handler(
     """Обработчик команды запуска"""
 
     conversation_histories.pop(message.from_user.id, None)
-    await message.answer('Привет!', reply_markup=bottom_keyboard())
+    await message.answer('Привет! Введите свой запрос:', reply_markup=bottom_keyboard())
