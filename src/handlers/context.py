@@ -6,7 +6,7 @@ router = Router()
 
 
 @router.message(Command('context'))
-async def context_handler(
+async def context_command_handler(
     message: Message,
     conversation_histories: dict[int, list[dict[str, str]]],
 ):
