@@ -10,10 +10,10 @@ async def help_command_handler(message: Message):
     """Обработчик команды вывода помощи"""
 
     help_text = (
-        'Вот что я умею:\n\n'
+        'Список команд:\n\n'
         '/start — начать работу и сбросить контекст\n'
-        '/help — показать это сообщение\n\n'
-        '/context — показать контекст\n\n'
+        '/help — показать это сообщение\n'
+        '/context — показать контекст\n'
         '/stop — остановить бота\n'
     )
     await message.answer(help_text)
