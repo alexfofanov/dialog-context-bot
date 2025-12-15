@@ -17,4 +17,4 @@ async def test_help_handler():
     mock_message.answer.assert_called()
 
     text_sent = mock_message.answer.call_args[0][0]
-    assert 'Вот что я умею:' in text_sent
+    assert 'Список команд:' in text_sent
